@@ -25,7 +25,7 @@
         <!-- deposit starts -->
         <div class="bg-red-400 p-4 rounded-lg">
           <h2 class="text-3xl">Deposit</h2>
-          <p class="text-5xl">$<span>00</span></p>
+          <p class="text-5xl">$<span id="deposit-amount">00</span></p>
         </div>
         <!-- deposit ends -->
         <!-- withdraw starts -->
@@ -46,14 +46,16 @@
       <div class="mt-4 grid grid-cols-2 gap-4">
         <!-- deposit starts -->
         <div class="bg-yellow-400 p-4 rounded-lg">
-          <h2 class="text-5xl">Deposit Amount</h2>
+          <h2 class="text-3xl">Deposit Amount</h2>
           <input
+            id="deposit-field"
             class="my-2 p-1 rounded text-black block w-3/4"
             type="text"
-            placeholder="Enter the amount for deposit"
+            placeholder="$ Enter the amount for deposit"
           />
           <button
-            class="bg-orange-400 text-2xl p-2 rounded-md font-semibold hover:bg-fuchsia-400"
+            id="btn-deposit"
+            class="bg-orange-400 text-xl p-2 rounded-md font-semibold hover:bg-fuchsia-400"
           >
             Deposit
           </button>
@@ -61,14 +63,14 @@
         <!-- deposit ends -->
         <!-- withdraw starts -->
         <div class="bg-cyan-400 p-4 rounded-lg">
-          <h2 class="text-5xl">Withdraw Amount</h2>
+          <h2 class="text-3xl">Withdraw Amount</h2>
           <input
             class="my-2 p-1 rounded text-black block w-3/4"
             type="text"
-            placeholder="Enter the amount for withdraw"
+            placeholder="$ Enter the amount for withdraw"
           />
           <button
-            class="bg-orange-400 text-2xl p-2 rounded-md font-semibold hover:bg-fuchsia-400"
+            class="bg-orange-400 text-xl p-2 rounded-md font-semibold hover:bg-fuchsia-400"
           >
             Withdraw
           </button>
@@ -78,5 +80,7 @@
       <!-- deposit and withdraw starts -->
     </main>
     <!-- main ends -->
+    <!-- custom js -->
+    <script src="./js/deposit.js"></script>
   </body>
 </html>
